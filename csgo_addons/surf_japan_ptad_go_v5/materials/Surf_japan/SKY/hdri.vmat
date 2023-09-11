@@ -1,0 +1,22 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "sky.vfx"
+
+	//---- Format ----
+	F_TEXTURE_FORMAT2 5 // RGBM (dxt compressed)
+
+	//---- Texture ----
+	g_flBrightnessExposureBias "-0.560"
+	g_flRenderOnlyExposureBias "0.000"
+	SkyTexture "materials/surf_japan/sky/kloofendal_48d_partly_cloudy_puresky_4k.exr"
+
+
+	VariableState
+	{
+		"Texture"
+		{
+		}
+	}
+}

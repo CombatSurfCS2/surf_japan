@@ -1,0 +1,123 @@
+"Layer0"
+{
+	"Shader"		"csgo_unlitgeneric.vfx"
+	"F_UNLIT"		"1"
+	"TextureColor"		"materials/effects/combineshield/comshieldwall_color.mks"
+	"F_BLEND_MODE"		"4"
+	"F_TWOTEXTURE"		"1"
+	"Texture2Color"		"materials/effects/combineshield/comshieldwall_close_color.tga"
+	"Texture2Translucency"		"[1.000000 1.000000 1.000000 0.000000]"
+	"DynamicParams"
+	{
+		"g_vTex2CoordOffset"		"frac( float2( 0.094, 0.034 ) * time() )"
+	}
+	"legacy_import"
+	{
+		"Unlittwotexture"
+		{
+			"$basetexture"		"Effects/Combineshield/comshieldwall"
+			"$texture2"		"Effects/Combineshield/comshieldwall_close"
+			"$translucent"		"1"
+			"$envmap"		"env_cubemap"
+			"$envmaptint"		"[1 1 1]"
+			"$gnoise"		"1"
+			"$playerdistance"		"0"
+			"$additive"		"1"
+			"$alpharesult"		"1"
+			"$smallamount"		"0.100000"
+			"$alpharesultmin"		"1"
+			"$alpharesultmax"		"1"
+			"$nodecal"		"1"
+			"$hundred"		"100"
+			"$largeamount"		"1"
+			"$playerdistance2"		"1"
+			"$moveresult"		"30"
+			"$ten"		"1500"
+			"$mod"		"0.100000"
+			"$frameminusten"		"1"
+			"Proxies"
+			{
+				"PlayerProximity"
+				{
+					"resultVar"		"$playerdistance2"
+					"scale"		"1"
+				}
+				"Subtract"
+				{
+					"srcVar1"		"$playerdistance2"
+					"srcVar2"		"$ten"
+					"resultVar"		"$moveresult"
+				}
+				"Multiply"
+				{
+					"srcVar1"		"$moveresult"
+					"srcVar2"		"$mod"
+					"resultVar"		"$frameminusten"
+				}
+				"Clamp"
+				{
+					"srcVar1"		"$frameminusten"
+					"min"		"0"
+					"max"		"30"
+					"resultVar"		"$frame2"
+				}
+				"Clamp"
+				{
+					"srcVar1"		"$frameminusten"
+					"min"		"0"
+					"max"		"30"
+					"resultVar"		"$frame"
+				}
+				"PlayerProximity"
+				{
+					"resultVar"		"$playerdistance"
+					"scale"		"0.000100"
+				}
+				"GaussianNoise"
+				{
+					"minVal"		"0.800000"
+					"maxVal"		"1"
+					"mean"		"0.700000"
+					"halfwidth"		"0.300000"
+					"resultVar"		"$gnoise"
+				}
+				"Subtract"
+				{
+					"srcVar1"		"$gnoise"
+					"srcVar2"		"$playerdistance"
+					"resultVar"		"$alpharesultmin"
+				}
+				"Multiply"
+				{
+					"srcVar1"		"$hundred"
+					"srcVar2"		"$playerdistance"
+					"resultVar"		"$largeamount"
+				}
+				"Equals"
+				{
+					"srcVar1"		"$playerdistance"
+					"resultVar"		"$envmaptint[1]"
+				}
+				"Add"
+				{
+					"srcVar1"		"$alpharesultmin"
+					"srcVar2"		"$smallamount"
+					"resultVar"		"$alpharesultmax"
+				}
+				"Sine"
+				{
+					"sineperiod"		"1.080000"
+					"sinemin"		"$alpharesultmin"
+					"sinemax"		"$alpharesultmax"
+					"resultVar"		"$alpha"
+				}
+				"TextureScroll"
+				{
+					"texturescrollvar"		"$texture2transform"
+					"texturescrollrate"		"0.100000"
+					"texturescrollangle"		"20"
+				}
+			}
+		}
+	}
+}

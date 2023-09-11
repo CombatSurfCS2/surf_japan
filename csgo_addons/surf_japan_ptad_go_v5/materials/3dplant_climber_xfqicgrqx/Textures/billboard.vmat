@@ -1,0 +1,58 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_foliage.vfx"
+
+	//---- Translucent ----
+	F_ALPHA_TEST 1
+
+	//---- Vertex Animation ----
+	F_VERTEX_ANIMATION 1 // Simple
+
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion "materials/3dplant_climber_xfqicgrqx/textures/billboard/billboard_2k_ao.jpg"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/3dplant_climber_xfqicgrqx/textures/billboard/billboard_2k_albedo.jpg"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Lighting ----
+	TextureRoughness "materials/3dplant_climber_xfqicgrqx/textures/billboard/billboard_2k_roughness.jpg"
+
+	//---- Normal Map ----
+	TextureNormal "materials/3dplant_climber_xfqicgrqx/textures/billboard/billboard_2k_normal.jpg"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	//---- Translucent ----
+	g_flAlphaBoostDistance "20000.000"
+	g_flAlphaBoostStrength "3.000"
+	g_flAlphaTestReference "0.500"
+	g_flGrazingAngleMask "0.000"
+	TextureTranslucency "materials/3dplant_climber_xfqicgrqx/textures/billboard/billboard_2k_opacity.jpg"
+
+	//---- Vertex Animation ----
+	g_flFlutterAmount "0.250"
+	g_flFlutterFalloff "1.000"
+	g_flFlutterNoiseScale "1.000"
+	g_flFlutterSpeed "1.000"
+	g_flSwayAmount "0.250"
+	g_flSwayFalloff "1.000"
+	g_flSwayNoiseScale "1.000"
+	g_flSwaySpeed "1.000"
+	g_flVertexNormalInfluence "0.000"
+
+	//---- Vertex Color ----
+	g_flHeightGradientAmount "0.000"
+	g_flHeightGradientPower "1.000"
+	g_flVertexAmbientOcclusionAmount "0.000"
+	g_flVertexAmbientOcclusionPower "1.000"
+}
