@@ -1,2 +1,3 @@
 # surf_japan
-![dasdsad](https://github.com/CombatSurfCS2/surf_japan/assets/142919074/d5d40ec7-dcdd-4aa4-9b06-a964cdd7eb15)
+
+![3](https://github.com/CombatSurfCS2/surf_japan/assets/142919074/4d101a3e-3990-459f-876f-45d8496c5e5e)
