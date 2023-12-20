@@ -1,0 +1,73 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_simple_2way_blend.vfx"
+
+	//---- Enable Ambient Occlusion ----
+	F_ENABLE_AMBIENT_OCCLUSION 1
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_flTexCoordRotation "0.000"
+	g_nScaleTexCoordUByModelScaleAxis "0" // None
+	g_nScaleTexCoordVByModelScaleAxis "0" // None
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordCenter "[0.500 0.500]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Mask ----
+	TextureMask "materials/surf_japan/3d_skybox/groundlowres/xdfeahp_2k_displacement.jpg"
+
+	//---- Material A ----
+	g_flMetalnessA "0.000"
+	TextureAmbientOcclusionA "materials/surf_japan/3d_skybox/groundlowres/wgstfan_2k_ao.jpg"
+	TextureColorA "materials/surf_japan/3d_skybox/groundlowres/wgstfan_2k_albedo.jpg"
+	TextureNormalA "materials/surf_japan/3d_skybox/groundlowres/wgstfan_2k_normal.jpg"
+	TextureRoughnessA "materials/surf_japan/3d_skybox/groundlowres/wgstfan_2k_roughness.jpg"
+
+	//---- Material B ----
+	g_flMetalnessB "0.000"
+	g_vTexCoordScale2 "[1.000 1.000]"
+	TextureAmbientOcclusionB "materials/surf_japan/3d_skybox/groundlowres/xdfeahp_2k_ao.jpg"
+	TextureColorB "materials/surf_japan/3d_skybox/groundlowres/xdfeahp_2k_albedo.jpg"
+	TextureNormalB "materials/surf_japan/3d_skybox/groundlowres/xdfeahp_2k_normal.jpg"
+	TextureRoughnessB "materials/surf_japan/3d_skybox/groundlowres/xdfeahp_2k_ao.jpg"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "grass"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Mask"
+		{
+		}
+		"Material A"
+		{
+		}
+		"Material B"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
+}

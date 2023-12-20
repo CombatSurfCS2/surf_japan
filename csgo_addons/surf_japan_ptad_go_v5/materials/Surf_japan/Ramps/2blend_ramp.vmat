@@ -1,0 +1,134 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_environment_blend.vfx"
+
+	//---- Secondary UVs ----
+	F_SECONDARY_AO 1
+	F_SECONDARY_UV 1
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_nScaleTexCoord2UByModelScaleAxis "0" // None
+	g_nScaleTexCoord2VByModelScaleAxis "0" // None
+	g_nScaleTexCoordUByModelScaleAxis "0" // None
+	g_nScaleTexCoordVByModelScaleAxis "0" // None
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Layer 1 ----
+	// [inherited from layer] g_bMetalness1 "1.000000"
+	// [inherited from layer] g_bModelTint1 "1.000000"
+	g_flHeightMapScale1 "1.007"
+	g_flHeightMapZeroPoint1 "0.242"
+	// [inherited from layer] g_flTexCoordRotation1 "0.000031"
+	// [inherited from layer] g_fTextureColorBrightness1 "1.000000"
+	// [inherited from layer] g_fTextureColorContrast1 "1.000000"
+	// [inherited from layer] g_fTextureColorSaturation1 "1.000000"
+	// [inherited from layer] g_fTextureNormalContrast1 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessBrightness1 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessContrast1 "1.000000"
+	// [inherited from layer] g_fTintMaskBrightness1 "1.000000"
+	// [inherited from layer] g_fTintMaskContrast1 "1.000000"
+	// [inherited from layer] g_nColorCorrectionMode1 "0.000000"
+	// [inherited from layer] g_nVertexColorMode1 "0.000000"
+	// [inherited from layer] g_vAmbientOcclusionLevels1 "[0.000000 0.500000 1.000000]"
+	// [inherited from layer] g_vTexCoordCenter1 "[0.500000 0.500000]"
+	// [inherited from layer] g_vTexCoordOffset1 "[0.000000 0.000000]"
+	// [inherited from layer] g_vTexCoordScale1 "[1.000000 1.000000]"
+	// [inherited from layer] g_vTextureColorTint1 "[1.000000 1.000000 1.000000 0.000000]"
+	TextureAmbientOcclusion1 "materials/surf_japan/ramps/rock_mossy_tb4mcdzk/tb4mcdzk_2k_ao.jpg"
+	TextureColor1 "materials/surf_japan/ramps/rock_mossy_tb4mcdzk/tb4mcdzk_2k_albedo.jpg"
+	TextureHeight1 "materials/surf_japan/ramps/rock_mossy_tb4mcdzk/tb4mcdzk_2k_displacement.jpg"
+	// [inherited from layer] TextureMetalness1 "materials\default\default_metal.tga"
+	TextureNormal1 "materials/surf_japan/ramps/rock_mossy_tb4mcdzk/tb4mcdzk_2k_normal.jpg"
+	TextureRoughness1 "materials/surf_japan/ramps/rock_mossy_tb4mcdzk/tb4mcdzk_2k_roughness.jpg"
+	// [inherited from layer] TextureTintMask1 "materials\default\default_mask.tga"
+
+	//---- Layer 2 ----
+	// [inherited from layer] g_bMetalness2 "1.000000"
+	// [inherited from layer] g_bModelTint2 "1.000000"
+	g_flBlendSoftness2 "0.065"
+	g_flHeightMapScale2 "-0.788"
+	g_flHeightMapZeroPoint2 "0.561"
+	// [inherited from layer] g_flTexCoordRotation2 "0.000031"
+	// [inherited from layer] g_fTextureColorBrightness2 "1.000000"
+	// [inherited from layer] g_fTextureColorContrast2 "1.000000"
+	// [inherited from layer] g_fTextureColorSaturation2 "1.000000"
+	// [inherited from layer] g_fTextureNormalContrast2 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessBrightness2 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessContrast2 "1.000000"
+	// [inherited from layer] g_fTintMaskBrightness2 "1.000000"
+	// [inherited from layer] g_fTintMaskContrast2 "1.000000"
+	// [inherited from layer] g_nColorCorrectionMode2 "0.000000"
+	// [inherited from layer] g_nVertexColorMode2 "0.000000"
+	// [inherited from layer] g_vAmbientOcclusionLevels2 "[0.000000 0.500000 1.000000]"
+	// [inherited from layer] g_vTexCoordCenter2 "[0.500000 0.500000]"
+	// [inherited from layer] g_vTexCoordOffset2 "[0.000000 0.000000]"
+	// [inherited from layer] g_vTexCoordScale2 "[1.000000 1.000000]"
+	// [inherited from layer] g_vTextureColorTint2 "[1.000000 1.000000 1.000000 0.000000]"
+	TextureAmbientOcclusion2 "materials/surf_japan/ramps/ricke_riverbed/xdvpeec_2k_ao.jpg"
+	TextureColor2 "materials/surf_japan/ramps/rock_rock_wdemcbi/wdemcbi_2k_albedo.jpg"
+	TextureHeight2 "materials/surf_japan/ramps/rock_rock_wdemcbi/wdemcbi_2k_displacement.jpg"
+	// [inherited from layer] TextureMetalness2 "materials\default\default_metal.tga"
+	TextureNormal2 "materials/surf_japan/ramps/rock_rock_wdemcbi/wdemcbi_2k_normal.jpg"
+	TextureRoughness2 "materials/surf_japan/ramps/rock_rock_wdemcbi/wdemcbi_2k_roughness.jpg"
+	// [inherited from layer] TextureTintMask2 "materials\default\default_mask.tga"
+
+	//---- Lighting ----
+	g_vSecondaryAmbientOcclusionLevels "[-0.147 1.000 0.907]"
+	TextureSecondaryAmbientOcclusion "materials/surf_japan/ramps/2uv_details/ambient occlusion map from mesh 1_1.png"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "rock"
+	}
+
+	UnusedVariables
+	{
+		"TextureNormalDetail1" ""
+		"TextureNormalDetail2" ""
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Layer 1"
+		{
+			"Color" 0
+			"Tint Mask" 0
+			"Color Correction" 0
+			"Lighting" 0
+			"Height" 0
+			"Texture Transform" 1
+		}
+		"Layer 2"
+		{
+			"Color" 0
+			"Tint Mask" 0
+			"Color Correction" 0
+			"Lighting" 0
+			"Texture Transform" 1
+			"Height" 0
+		}
+		"Lighting"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
+}

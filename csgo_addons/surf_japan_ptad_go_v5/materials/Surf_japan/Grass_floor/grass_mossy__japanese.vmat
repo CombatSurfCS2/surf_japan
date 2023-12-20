@@ -2,10 +2,7 @@
 
 Layer0
 {
-	shader "csgo_simple.vfx"
-
-	//---- Ambient Occlusion ----
-	TextureAmbientOcclusion "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_ao.jpg"
+	shader "csgo_simple_2way_blend.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
@@ -17,19 +14,55 @@ Layer0
 	g_vTexCoordOffset "[0.000 0.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
-	TextureColor "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_albedo.jpg"
 
 	//---- Fog ----
 	g_bFogEnabled "1"
 
-	//---- Lighting ----
-	g_flMetalness "0.000"
-	TextureRoughness "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_roughness.jpg"
+	//---- Mask ----
+	TextureMask "materials/surf_japan/grass_floor/grass_2/vecneiulw_2k_displacement.jpg"
 
-	//---- Normal Map ----
-	TextureNormal "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_normal.jpg"
+	//---- Material A ----
+	g_flMetalnessA "0.000"
+	TextureColorA "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_albedo.jpg"
+	TextureNormalA "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_normal.jpg"
+	TextureRoughnessA "materials/surf_japan/grass_floor/grass/umkkfcolw_2k_roughness.jpg"
+
+	//---- Material B ----
+	g_flMetalnessB "0.000"
+	g_vTexCoordScale2 "[1.000 1.000]"
+	TextureColorB "materials/surf_japan/grass_floor/grass_2/vecneiulw_2k_albedo.jpg"
+	TextureNormalB "materials/surf_japan/grass_floor/grass_2/vecneiulw_2k_normal.jpg"
+	TextureRoughnessB "materials/surf_japan/grass_floor/grass_2/vecneiulw_2k_roughness.jpg"
 
 	//---- Texture Address Mode ----
 	g_nTextureAddressModeU "0" // Wrap
 	g_nTextureAddressModeV "0" // Wrap
+
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "grass"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Mask"
+		{
+		}
+		"Material A"
+		{
+		}
+		"Material B"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
 }

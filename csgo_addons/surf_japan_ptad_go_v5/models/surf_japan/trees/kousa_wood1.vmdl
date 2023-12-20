@@ -1,0 +1,116 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc32:version{c5dcef98-b629-46ab-88e3-a17c005c935e} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "LODGroupList"
+				children = 
+				[
+					{
+						_class = "LODGroup"
+						switch_threshold = 0.0
+						meshes = 
+						[
+							"1",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 159.729691
+						meshes = 
+						[
+							"2",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 652.302307
+						meshes = 
+						[
+							"3",
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "1"
+						filename = "models/surf_japan/trees/Kousa_Wood1/KW_ver1_Lod1.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "2"
+						filename = "models/surf_japan/trees/Kousa_Wood1/KW_ver1_Lod2.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "3"
+						filename = "models/surf_japan/trees/Kousa_Wood1/KW_ver1_Lod3.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "branches_08_mat.vmat"
+								to = "materials/surf_japan/trees/branches.vmat"
+							},
+							{
+								from = "cap_06_mat.vmat"
+								to = "materials/surf_japan/trees/cap.vmat"
+							},
+							{
+								from = "kousadogwoodbark_mat.vmat"
+								to = "materials/surf_japan/trees/kousadogwoodbark.vmat"
+							},
+							{
+								from = "kousadogwoodleafhd2_mat.vmat"
+								to = "materials/surf_japan/trees/kousadogwoodleafhd2.vmat"
+							},
+							{
+								from = "kousadogwoodleafhd_mat.vmat"
+								to = "materials/surf_japan/trees/kousadogwoodleafhd.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = "prop_static"
+		anim_graph_name = ""
+	}
+}

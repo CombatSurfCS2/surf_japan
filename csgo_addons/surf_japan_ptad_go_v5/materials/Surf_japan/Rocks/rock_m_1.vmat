@@ -1,0 +1,111 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_environment.vfx"
+
+	//---- Create Variation ----
+	F_MATERIAL_REFERENCE 1
+
+	//---- Detail ----
+	F_DETAIL_NORMAL 1
+
+	//---- Secondary UVs ----
+	F_DETAIL_NORMAL_USES_SECONDARY_UVS 1
+	F_SECONDARY_AO 1
+	F_SECONDARY_UV 1
+
+	//---- Shadows ----
+	F_DO_NOT_CAST_SHADOWS 1
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_nScaleTexCoordUByModelScaleAxis "0" // None
+	g_nScaleTexCoordVByModelScaleAxis "0" // None
+	g_vColorTint "[1.000000 1.000000 1.000000 1.000000]"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Layer 1 ----
+	g_bModelTint1 "0"
+	g_fDetailTextureNormalContrast1 "2.000"
+	// [inherited from layer] g_flDetailTexCoordRotation1 "0.000031"
+	// [inherited from layer] g_flHeightMapScale1 "1.000000"
+	// [inherited from layer] g_flHeightMapZeroPoint1 "0.500000"
+	// [inherited from layer] g_flTexCoordRotation1 "0.000031"
+	g_fTextureColorBrightness1 "2.492"
+	g_fTextureColorContrast1 "0.328"
+	// [inherited from layer] g_fTextureColorSaturation1 "1.000000"
+	// [inherited from layer] g_fTextureNormalContrast1 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessBrightness1 "1.000000"
+	// [inherited from layer] g_fTextureRoughnessContrast1 "1.000000"
+	g_fTintMaskBrightness1 "0.426"
+	g_fTintMaskContrast1 "-2.000"
+	// [inherited from layer] g_nColorCorrectionMode1 "0.000000"
+	// [inherited from layer] g_nVertexColorMode1 "0.000000"
+	g_vAmbientOcclusionLevels1 "[0.128 0.773 1.000]"
+	// [inherited from layer] g_vDetailTexCoordCenter1 "[0.500000 0.500000]"
+	// [inherited from layer] g_vDetailTexCoordOffset1 "[0.000000 0.000000]"
+	// [inherited from layer] g_vDetailTexCoordScale1 "[1.000000 1.000000]"
+	// [inherited from layer] g_vTexCoordCenter1 "[0.500000 0.500000]"
+	// [inherited from layer] g_vTexCoordOffset1 "[0.000000 0.000000]"
+	// [inherited from layer] g_vTexCoordScale1 "[1.000000 1.000000]"
+	g_vTextureColorTint1 "[1.000000 1.000000 1.000000 1.000000]"
+	TextureAmbientOcclusion1 "materials/surf_japan/rocks/rock_massive/rock_massive_ao.png"
+	TextureColor1 "materials/surf_japan/rocks/rock_detail/vczoaavg_2k_albedo.jpg"
+	TextureHeight1 ""
+	TextureMetalness1 ""
+	TextureNormal1 "materials/surf_japan/rocks/rock_detail/vczoaavg_2k_normal.jpg"
+	TextureNormalDetail1 "materials/surf_japan/rocks/rock_massive/normal map from mesh tt_checker_512x512_uv_grid.png"
+	TextureRoughness1 "materials/surf_japan/rocks/rock_detail/vczoaavg_2k_roughness.jpg"
+	TextureTintMask1 "materials/surf_japan/rocks/rock_massive/rock_m_lp_tt_checker_512x512_uv_grid_basecolor.png"
+
+	//---- Lighting ----
+	g_vSecondaryAmbientOcclusionLevels "[0.000 0.500 1.000]"
+	TextureSecondaryAmbientOcclusion "materials/surf_japan/rocks/rock_detail/vczoaavg_2k_ao.jpg"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	UnusedVariables
+	{
+		"g_flOverlayBrightnessContrast" "1"
+		"g_flOverlayDarknessContrast" "1"
+		"g_flOverlayTexCoordRotation" "0"
+		"g_nColorOverlayMode" "0"
+		"g_nColorOverlayTintMask" "0"
+		"g_vOverlayTexCoordCenter" "[0.500 0.500]"
+		"g_vOverlayTexCoordOffset" "[0.000 0.000]"
+		"g_vOverlayTexCoordScale" "[1.000 1.000]"
+		"TextureSharedColorOverlay" ""
+		"g_flOcclusionCullingBoundsScale" "1"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Layer 1"
+		{
+			"Color" 0
+			"Tint Mask" 1
+			"Color Correction" 0
+			"Lighting" 0
+			"Height" 1
+			"Texture Transform" 0
+		}
+		"Lighting"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
+}

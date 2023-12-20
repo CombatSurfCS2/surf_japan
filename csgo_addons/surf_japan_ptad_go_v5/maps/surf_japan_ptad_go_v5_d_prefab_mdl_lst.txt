@@ -1,0 +1,3 @@
+models/props/cs_militia/tree_large_militia.mdl
+models/props/de_inferno/tree_small.mdl
+models/props_junk/watermelon01.mdl

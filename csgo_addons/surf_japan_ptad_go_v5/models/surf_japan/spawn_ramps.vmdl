@@ -14,12 +14,8 @@
 						remaps = 
 						[
 							{
-								from = "flagstone_floor_ueknbfyo.vmat"
-								to = "materials/surf_japan_ramps/flagstone_stone.vmat"
-							},
-							{
-								from = "flagstone_wall_vkmfaek.vmat"
-								to = "materials/surf_japan_ramps/flagstone_ramp.vmat"
+								from = "spawn_001.vmat"
+								to = "materials/surf_japan/ramps/spawn_ramps.vmat"
 							},
 						]
 						use_global_default = false
@@ -59,13 +55,47 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "models/surf_japan/Spawn_REF.fbx"
+						name = "1"
+						filename = "models/surf_japan/ramps/Spawn_ramps.fbx"
 						import_scale = 1.0
 						import_filter = 
 						{
 							exclude_by_default = false
 							exception_list = [  ]
 						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "2"
+						filename = "models/surf_japan/ramps/Spawn_ramps_LOD2.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "LODGroupList"
+				children = 
+				[
+					{
+						_class = "LODGroup"
+						switch_threshold = 0.0
+						meshes = 
+						[
+							"1",
+						]
+					},
+					{
+						_class = "LODGroup"
+						switch_threshold = 25.0
+						meshes = 
+						[
+							"2",
+						]
 					},
 				]
 			},

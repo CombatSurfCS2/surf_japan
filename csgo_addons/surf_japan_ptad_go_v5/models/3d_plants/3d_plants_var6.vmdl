@@ -11,14 +11,6 @@
 				[
 					{
 						_class = "LODGroup"
-						switch_threshold = 11.0
-						meshes = 
-						[
-							"3",
-						]
-					},
-					{
-						_class = "LODGroup"
 						switch_threshold = 12.852071
 						meshes = 
 						[
@@ -57,17 +49,6 @@
 				_class = "RenderMeshList"
 				children = 
 				[
-					{
-						_class = "RenderMeshFile"
-						name = "3"
-						filename = "models/3d_plants/Var6/Var6_LOD2.fbx"
-						import_scale = 1.0
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
 					{
 						_class = "RenderMeshFile"
 						name = "4"

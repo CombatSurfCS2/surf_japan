@@ -14,28 +14,12 @@
 						switch_threshold = 10.0
 						meshes = 
 						[
-							"3",
-						]
-					},
-					{
-						_class = "LODGroup"
-						switch_threshold = 4.701206
-						meshes = 
-						[
-							"4",
-						]
-					},
-					{
-						_class = "LODGroup"
-						switch_threshold = 10.0
-						meshes = 
-						[
 							"5",
 						]
 					},
 					{
 						_class = "LODGroup"
-						switch_threshold = 40.140923
+						switch_threshold = 13.39
 						meshes = 
 						[
 							"6",
@@ -65,28 +49,6 @@
 				_class = "RenderMeshList"
 				children = 
 				[
-					{
-						_class = "RenderMeshFile"
-						name = "3"
-						filename = "models/3d_plants/Var8/Var8_LOD2.fbx"
-						import_scale = 1.0
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
-					{
-						_class = "RenderMeshFile"
-						name = "4"
-						filename = "models/3d_plants/Var8/Var8_LOD3.fbx"
-						import_scale = 1.0
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
-					},
 					{
 						_class = "RenderMeshFile"
 						name = "5"

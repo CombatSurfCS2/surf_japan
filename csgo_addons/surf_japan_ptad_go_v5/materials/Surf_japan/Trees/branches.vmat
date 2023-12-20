@@ -1,0 +1,75 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "csgo_foliage.vfx"
+
+	//---- Translucent ----
+	F_ALPHA_TEST 1
+
+	//---- Vertex Animation ----
+	F_VERTEX_ANIMATION 1 // Simple
+
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/surf_japan/trees/branches_08.jpg"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Lighting ----
+	TextureRoughness "materials/default/default_rough.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/surf_japan/trees/branches_08_normal.jpg"
+
+	//---- Texture Address Mode ----
+	g_nTextureAddressModeU "0" // Wrap
+	g_nTextureAddressModeV "0" // Wrap
+
+	//---- Translucent ----
+	g_flAlphaBoostDistance "20000.000"
+	g_flAlphaBoostStrength "3.000"
+	g_flAlphaTestReference "0.500"
+	g_flGrazingAngleMask "0.000"
+	TextureTranslucency "materials/surf_japan/trees/branches_08_opacity.jpg"
+
+	//---- Vertex Animation ----
+	g_flFlutterAmount "0.100"
+	g_flFlutterFalloff "1.000"
+	g_flFlutterNoiseScale "1.000"
+	g_flFlutterSpeed "1.000"
+	g_flSwayAmount "0.209"
+	g_flSwayFalloff "1.000"
+	g_flSwayNoiseScale "1.000"
+	g_flSwaySpeed "1.000"
+	g_flVertexNormalInfluence "0.000"
+
+	//---- Vertex Color ----
+	g_flHeightGradientAmount "0.000"
+	g_flHeightGradientPower "1.000"
+	g_flVertexAmbientOcclusionAmount "0.000"
+	g_flVertexAmbientOcclusionPower "1.000"
+
+	UnusedVariables
+	{
+		"g_bBranchMotionPerpendicular" "1"
+		"g_bJitterMotion" "0"
+		"g_flBranchDeflection" "0"
+		"g_flBranchDeflectionEnd" "150"
+		"g_flBranchDeflectionStart" "0"
+		"g_flFrondDeflectionEnd" "50"
+		"g_flFrondDeflectionStart" "0"
+		"g_flFrondFlutter" "0"
+		"g_flFrondPivotLength" "0.2"
+		"g_flFrondSpatialIncoherence" "0.1"
+		"g_flTrunkDeflection" "0"
+		"g_flTrunkDeflectionEnd" "300"
+		"g_flTrunkDeflectionStart" "0"
+	}
+}
