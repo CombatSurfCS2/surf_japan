@@ -1,2 +1,2 @@
 # surf_japan
-![Screenshot 2023-10-26 010915](https://github.com/CombatSurfCS2/surf_japan/assets/142919074/5eaf33d8-5e57-40ca-a098-50b506b9d103)
+![Screenshot 2023-12-21 024415](https://github.com/CombatSurfCS2/surf_japan/assets/142919074/79a00129-6492-42bd-b0c1-88e59ac01430)
